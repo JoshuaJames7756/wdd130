@@ -15,8 +15,14 @@ h1 {
     text-align: center;
 }
 
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
 main img {
-    width: 250px;
+    width: 200px;
     height: auto;
     border: 1px solid steelblue;
     padding: 2px;
