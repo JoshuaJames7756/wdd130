@@ -1,15 +1,32 @@
 .callout {
-	
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1f3d6d;
+    color: whitesmoke;
+    font-family: "Times New Roman", serif;
 }
 
 .callout img {
-	
+    float: right;
+    width: 120px;
+    height: auto;
+    margin-left: 15px;
+    border: 1px solid #f2d38b;
+    padding: 2px;
+    background-color: #f2d38b;
 }
 
 blockquote {
-	
+    margin: 0%;
 }
 
 cite {
-	
+    display: block;
+    border-top: 1px dotted white;
+    margin-top: 15px;
+    padding-top: 10px;
+    text-align: right;
+    font-size: medium;
+    font-style: italic;
 }
