@@ -36,7 +36,7 @@ footer p {
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: black;
+    color: #fff;
 }
 
 nav,
