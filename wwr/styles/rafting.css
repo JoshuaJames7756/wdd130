@@ -15,7 +15,7 @@
 
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
+    color: var(--primary-color);
     line-height: 1.6;
 }
 
@@ -26,11 +26,11 @@ main {
 }
 
 footer {
-    background-color: #39a0d8;
+    background-color: var(--secondary-color);
 }
 
 footer p {
-    color: var(--primary-color);
+    color: #fff;
 }
 
 h1,
@@ -47,6 +47,10 @@ article {
     padding: 8px;
 }
 
+section p {
+    color: var(--accent1-color)
+}
+
 .section-title {
     background-color: var(--accent2-color);
     padding: 12px;
@@ -54,7 +58,7 @@ article {
 }
 
 .section-title h2 {
-    color: #fff;
+    color: var(--accent1-color);
     text-align: center;
     margin: 0;
 }
