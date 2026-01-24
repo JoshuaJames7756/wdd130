@@ -30,7 +30,7 @@ footer {
 }
 
 footer p {
-    color: #0b3d91;
+    color: var(--primary-color);
 }
 
 h1,
