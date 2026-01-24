@@ -30,7 +30,7 @@ footer {
 }
 
 footer p {
-    color: #fff;
+    color: var(--accent1-color);
 }
 
 h1,
@@ -58,7 +58,7 @@ section p {
 }
 
 .section-title h2 {
-    color: #fff;
+    color: var(--accent1-color);
     text-align: center;
     margin: 0;
 }
