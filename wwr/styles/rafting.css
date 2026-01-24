@@ -20,10 +20,15 @@ body {
 }
 
 header,
-main,
+main {
+    width: 840px;
+    margin: 0 auto;
+}
+
 footer {
     width: 840px;
     margin: 0 auto;
+    background-color: var(--secondary-color);
 }
 
 h1,
@@ -41,14 +46,15 @@ article {
 }
 
 .section-title {
-    background-color: var(--accent1-color);
+    background-color: var(--accent2-color);
     padding: 12px;
     margin: 24px 0;
 }
 
 .section-title h2 {
-    color: white;
+    color: #fff;
     text-align: center;
+    margin: 0;
 }
 
 .socialmedia a {
