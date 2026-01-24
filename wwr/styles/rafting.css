@@ -1,0 +1,118 @@
+/* ==============================================
+   CSS Variables
+================================================= */
+:root {
+    --primary-color: #1b5e20;
+    /* Verde oscuro para títulos */
+    --secondary-color: #4fc3f7;
+    /* Azul claro opcional */
+    --accent1-color: #0d47a1;
+    /* Azul intenso para overlays */
+    --accent2-color: #ffca28;
+    /* Amarillo para acentos */
+    --heading-font: Georgia, serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+/* ==============================================
+   Reset Box-Model
+================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==============================================
+   Body Styling
+================================================= */
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    line-height: 1.6;
+}
+
+/* ==============================================
+   Layout: Limit Page Width & Center
+================================================= */
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* ==============================================
+   Headings
+================================================= */
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+/* ==============================================
+   Basic Spacing for Elements
+================================================= */
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* ==============================================
+   Footer Social Media Links
+================================================= */
+.socialmedia a {
+    text-decoration: none;
+}
+
+/* ==============================================
+   Hero Div with Overlay
+================================================= */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* ==============================================
+   h1 Overlay on Hero
+================================================= */
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+/* ==============================================
+   Article Overlay on Hero
+================================================= */
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 300px;
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Semi-transparente */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    /* Sombra opcional */
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 12px;
+}
