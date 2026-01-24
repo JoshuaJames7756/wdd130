@@ -26,9 +26,11 @@ main {
 }
 
 footer {
-    width: 840px;
-    margin: 0 auto;
-    background-color: var(--secondary-color);
+    background-color: #39a0d8;
+}
+
+footer p {
+    color: #0b3d91;
 }
 
 h1,
