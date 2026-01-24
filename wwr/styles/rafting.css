@@ -1,40 +1,24 @@
-/* ==============================================
-   CSS Variables
-================================================= */
 :root {
     --primary-color: #1b5e20;
-    /* Verde oscuro para títulos */
     --secondary-color: #4fc3f7;
-    /* Azul claro opcional */
     --accent1-color: #0d47a1;
-    /* Azul intenso para overlays */
     --accent2-color: #ffca28;
-    /* Amarillo para acentos */
     --heading-font: Georgia, serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
 
-/* ==============================================
-   Reset Box-Model
-================================================= */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ==============================================
-   Body Styling
-================================================= */
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
     line-height: 1.6;
 }
 
-/* ==============================================
-   Layout: Limit Page Width & Center
-================================================= */
 header,
 main,
 footer {
@@ -42,18 +26,12 @@ footer {
     margin: 0 auto;
 }
 
-/* ==============================================
-   Headings
-================================================= */
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
-/* ==============================================
-   Basic Spacing for Elements
-================================================= */
 nav,
 p,
 section,
@@ -62,16 +40,28 @@ article {
     padding: 8px;
 }
 
-/* ==============================================
-   Footer Social Media Links
-================================================= */
+.section-title {
+    background-color: var(--accent1-color);
+    padding: 12px;
+    margin: 24px 0;
+}
+
+.section-title h2 {
+    color: white;
+    text-align: center;
+}
+
 .socialmedia a {
     text-decoration: none;
 }
 
-/* ==============================================
-   Hero Div with Overlay
-================================================= */
+.socialmedia a img {
+    width: 32px;
+    height: 32px;
+    margin: 0 8px;
+    vertical-align: middle;
+}
+
 .hero {
     position: relative;
 }
@@ -82,9 +72,6 @@ article {
     height: auto;
 }
 
-/* ==============================================
-   h1 Overlay on Hero
-================================================= */
 .hero h1 {
     position: absolute;
     top: 20px;
@@ -96,19 +83,15 @@ article {
     color: #fff;
 }
 
-/* ==============================================
-   Article Overlay on Hero
-================================================= */
 .hero article {
     position: absolute;
     bottom: 20px;
-    left: 20px;
-    width: 300px;
-    padding: 12px;
-    background-color: rgba(255, 255, 255, 0.8);
-    /* Semi-transparente */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    /* Sombra opcional */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    padding: 16px;
+    background-color: rgba(13, 71, 161, 0.8);
+    color: #fff;
 }
 
 .hero article img {
