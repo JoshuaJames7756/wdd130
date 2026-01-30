@@ -169,20 +169,30 @@ main {
 
 footer {
     background-color: #fff;
-    padding: 1rem;
+    padding: 1rem 0;
+}
+
+footer .footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--accent2-color);
 }
 
 footer p {
     color: var(--accent1-color);
+    margin: 0;
 }
 
-.socialmedia a {
-    text-decoration: none;
+.socialmedia {
+    display: flex;
+    gap: 0.5rem;
 }
 
 .socialmedia a img {
     width: 32px;
     height: 32px;
-    margin: 0 8px;
-    vertical-align: middle;
+    display: block;
 }
