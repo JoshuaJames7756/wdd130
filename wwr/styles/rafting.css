@@ -191,6 +191,12 @@ footer p {
     gap: 0.5rem;
 }
 
+.socialmedia a {
+    text-decoration: none;
+    /* elimina subrayado */
+    display: inline-block;
+}
+
 .socialmedia a img {
     width: 32px;
     height: 32px;
