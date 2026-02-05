@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+}
+
+header {
+    margin: 0 auto;
+    width: 650px;
+}
+
+h1 {
+    margin: 1rem;
+    font-size: 1.5em;
+    color: navy;
+    text-align: center;
+}
+
+form {
+    width: 700px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: #eee;
+    border-radius: 0.5rem;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+legend {
+    padding: 0 0.5rem;
+    color: navy;
+    font-weight: bold;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.column2 {
+    grid-template-columns: 200px 1fr;
+}
+
+.column1 {
+    grid-template-columns: 1fr auto;
+}
+
+label {
+    text-align: center;
+    padding-right: 1rem;
+}
+
+input,
+select,
+textarea {
+    padding: 0.4rem;
+    font-size: 1rem;
+}
+
+textarea {
+    width: 100%;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 0.6rem 1.2rem;
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+}
+
+footer {
+    margin: 1rem auto 0;
+    width: 650px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #777;
+    border-top: 1px solid #ccc;
+}
