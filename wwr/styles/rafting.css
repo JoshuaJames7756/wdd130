@@ -440,3 +440,91 @@ footer p {
 .grid-item p {
     color: var(--primary-color);
 }
+
+.cta-contact {
+    margin: 2rem 0;
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--accent2-color);
+    border: 3px solid var(--accent1-color);
+    border-radius: 8px;
+}
+
+.cta-contact h2 {
+    color: var(--accent1-color);
+    margin-bottom: 0.5rem;
+}
+
+.cta-contact p {
+    margin-bottom: 1rem;
+}
+
+.cta-contact a {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    text-decoration: none;
+    color: var(--accent1-color);
+    border: 2px solid var(--accent1-color);
+    border-radius: 4px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cta-contact a:hover {
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+.trips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.trip {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border: 2px solid var(--accent1-color);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.trip img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.trip h2 {
+    color: var(--accent1-color);
+    margin-bottom: 0.5rem;
+}
+
+.trips-table {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.trips-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.trips-table th,
+.trips-table td {
+    border: 2px solid var(--accent1-color);
+    padding: 0.8rem;
+}
+
+.trips-table th {
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+}
+
+.trips-table tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
