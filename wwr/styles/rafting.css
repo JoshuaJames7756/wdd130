@@ -53,7 +53,8 @@ header {
 }
 
 main {
-    width: 840px;
+    width: 100%;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -111,7 +112,7 @@ main {
     border: 3px dashed darkcyan;
     background-color: lightyellow;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 1rem;
 }
@@ -286,4 +287,156 @@ footer p {
 .information button {
     grid-column: 2 / 3;
     margin-top: 12px;
+}
+
+@media (max-width: 768px) {
+
+    .grid-info {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navigation {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .navigation a {
+        padding: 10px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-item {
+        max-width: 90%;
+    }
+
+    .history-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .information {
+        grid-template-columns: 1fr;
+    }
+
+    .information > label {
+        text-align: left;
+    }
+
+    .purpose {
+        grid-template-columns: 1fr;
+    }
+
+    .purpose legend {
+        text-align: left;
+    }
+
+    .message-box {
+        grid-template-columns: 1fr;
+    }
+
+    footer .footer-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.newsletter {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.newsletter form {
+    margin-top: 1rem;
+}
+
+.newsletter label {
+    margin-right: 0.5rem;
+}
+
+.newsletter input {
+    padding: 0.4rem;
+    margin-right: 1rem;
+}
+
+.newsletter button {
+    padding: 0.5rem 1rem;
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.cta {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: var(--accent2-color);
+}
+
+.cta h2 {
+    margin-bottom: 1rem;
+}
+
+.cta p {
+    max-width: 600px;
+    margin: 0 auto 1.5rem auto;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: var(--accent1-color);
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.cta-button:hover {
+    opacity: 0.85;
+}
+
+.grid-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.grid-item {
+    background-color: var(--accent2-color);
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.grid-item h2 {
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+    margin-bottom: 0.5rem;
+}
+
+.grid-item p {
+    color: var(--primary-color);
 }
